@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b2c88f3f64.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="modal-bgc"></div>
+    <header class="main-header">
+        <nav class="main-header-content flex space-between">
+            <div class="logo flex align-center">Blogin<span>.</span></div>
+            <div class="main-nav flex space-between">
+                <ul class="main-nav clean-list flex align-center">
+                    <li><a href="#" onclick="navLinkToggle(this)">Journal</a></li>
+                    <li><a href="#" onclick="navLinkToggle(this)">About</a></li>
+                    <li><a href="#" onclick="navLinkToggle(this)">Work</a></li>
+                    <li><a href="#" onclick="navLinkToggle(this)">Contact</a></li>
+                </ul>
+                <button class="btn-menu" onclick="toggleMenu(this)">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal">
+        <button class="close-btn" onclick="closeModal()">X</button>
+        <h1>Join us to get access to the latest stories!</h1>
+        <form class="flex dir-column align-center">
+            <label for="mail">Email:</label>
+            <input type="email" placeholder="Enter your mail">
+            <button type="button" class="submit" onclick="closeModal()">Save</button>
+        </form>
+    </div>
+    <main class="main-content main-layout">
+        <div class="card card-layout flex">
+            <img src="img/001.png" alt="" class="card-img">
+            <div class="card-info flex dir-column space-between">
+                <h1 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="openModal()">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card card-layout flex space-between">
+            <img src="img/002.png" alt="" class="card-img">
+            <div class="card-info flex dir-column space-between">
+                <h1 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="openModal()">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card card-layout flex space-between">
+            <img src="img/003.png" alt="" class="card-img">
+            <div class="card-info flex dir-column space-between">
+                <h1 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button onclick="openModal()">Continue Reading</button>
+            </div>
+        </div>
+        <div class="move-pages flex space-between align-center">
+            <span>← Previous</span>
+            <span>next →</span>
+        </div>
+    </main>
+
+    <footer class="main-footer flex dir-column space-between align-center">
+        <div class="logo">Blogin<span>.</span></div>
+        <small>&copy 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+            <span>Pixelhint.com</span></small>
+        <div class="social-container">
+            <ul class="flex clean-list">
+                <li>
+                    <a href="#" class="facebook fab">&#xf39e;</a>
+                </li>
+                <li>
+                    <a href="#" class="twitter fab">&#xf099;</a>
+                </li>
+                <li>
+                    <a href="#" class="behance fab">&#xf1b4;</a>
+                </li>
+                <li>
+                    <a href="#" class="dribbble fab">&#xf17d;</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function navLinkToggle(elLink) {
+            var elLinks = document.querySelectorAll(".main-nav li a");
+            elLinks.forEach(link => link.classList.remove('nav-link'));
+            elLink.classList.add('nav-link');
+        }
+    </script>
+
+    <script>
+        function toggleMenu(elBtn) {
+            document.body.classList.toggle("menu-open");
+            if (elBtn.innerText === '☰') elBtn.innerText = 'X';
+            else if (elBtn.innerText === 'X') elBtn.innerText = '☰';
+            // elBtn.innerText = '☰'? 'X': '☰';
+
+        }
+    </script>
+
+    <script>
+        function openModal(){
+            document.querySelector('.modal-bgc').classList.add("main-screen");
+            document.querySelector('.modal').style.display = 'block'
+        }
+    </script>
+
+    <script>
+        function closeModal(){
+            document.querySelector('.modal-bgc').classList.remove("main-screen");
+            document.querySelector('.modal').style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>

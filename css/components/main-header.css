@@ -1,0 +1,37 @@
+.main-header {
+    background-color: var(--clr2);
+    box-shadow: inset 0 -6px 0 var(--clr5);
+}
+
+.main-header .main-header-content{
+    /* max-width: 980px; */
+    height: 130px;
+    margin: auto;
+}
+
+.main-header .logo{
+    color: var(--clr3);
+}
+
+.main-nav ul>*{
+    text-align: center;
+}
+/* 
+.main-nav ul>*:not(last-child){
+    box-shadow: -1px 0 0 var(--clr5);
+}
+
+.main-nav ul>*:last-child{
+    box-shadow: -1px 0 0 var(--clr5), inset -1px 0 0 var(--clr5);
+} */
+
+.main-nav a{
+    text-decoration: none;
+    /* color: var(--clr3); */
+}
+
+/* .main-nav a:hover, a.nav-link{
+    box-shadow: -1px 0 0 var(--clr5), inset 0 -6px 0 var(--clr4);
+    color: var(--clr4);
+} */
+

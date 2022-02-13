@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    color: var(--clr1);
+    font-family: lato-reg, serif;
+    line-height: 1.25em;
+}
+
+body{
+    font-size: 1rem;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 1em;
+}
+
+h1{
+    font-size: 1.75em;
+    line-height: normal;
+}
+
+button{
+    font-family: lato-bold, serif;
+    font-size: 1rem;
+}
+
+button:hover{
+    cursor:pointer;
+}

@@ -1,0 +1,48 @@
+.main-content {
+    border: 1px solid #e1e0e0;
+}
+
+.main-content .card img{
+    flex-basis: 50%;
+}
+
+.card .card-info .card-title {
+    color: var(--clr6);
+    text-transform: uppercase;
+}
+
+.card .card-info button {
+    width: 11.5625rem;
+    height: 40px;
+    border: 2px solid var(--clr7);
+    border-radius: 20px;
+    color: var(--clr8);
+    background-color: inherit;
+    margin-top: 1em;
+}
+
+.card .card-info button:hover{
+    width: 13.125rem;
+    transition: width .3s;
+    color: var(--clr4);
+    border-color: var(--clr4);
+}
+
+.card .card-info button:hover::after {
+    content: " →";
+}
+
+.move-pages {
+    border-top: 1px solid #e1e0e0;
+    padding-inline: 1.875rem;
+    height: 75px;
+    font-size: 1.25em;
+    font-family: lato-bold, serif;
+    text-transform: uppercase;
+    color: var(--clr9);
+}
+
+.move-pages>*:hover{
+    cursor: pointer;
+    color: var(--clr6);
+}
