@@ -19,7 +19,7 @@
 
 .modal {
     position: fixed;
-    background-color: rgba(250, 235, 215);
+    background-color: rgb(238, 237, 237);
     padding: 60px 40px;
     display: none;
     margin: auto;
@@ -29,9 +29,10 @@
     float: right;
     width: 25px;
     height: 25px;
-    border-radius: 3px;
+    border: none;
     cursor: pointer;
-    background-color: rgb(245, 216, 178);
+    font-size: 1.2em;
+    background-color: inherit;
 }
 
 .modal h1 {
@@ -50,9 +51,9 @@
 }
 
 .modal input{
-    border: 1px solid black;
+    border: 2px solid black;
     width: 250px;
-    height: 25px;
+    height: 30px;
     font-size: 1em;
     border-radius: 5px;
 }
@@ -60,7 +61,7 @@
 .modal button.submit{
     width: 100px;
     height: 40px;
-    background-color: crimson;
+    background-color: rgb(165, 163, 163);
     border: 1px solid black;
     border-radius: 3px;
 }
